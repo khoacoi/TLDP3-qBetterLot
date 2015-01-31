@@ -1,0 +1,1526 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner"
+  dslVersion="1.0.0.0"
+  Id="eb7c06cb-e00e-4342-b911-7a6566214b5d"
+  name="PAModelingProject" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <component
+        Id="8443f6c6-495b-4fb9-89a4-e03698de1b7d"
+        name="Web Browser"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <requiredInterface
+            Id="55c4319e-5bb2-493e-996e-ecfcbba87b93"
+            name="Port1"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <suppliersInternal>
+              <dependency
+                Id="a1163090-5582-4730-b40e-96a06d8b0a81">
+                <providedInterfaceMoniker
+                  Id="b4dd5cb7-448d-4a4b-a5d1-bee994028dd3"
+                  LastKnownName="Port1"
+                  LastKnownLocation="PAModelingProject.uml" />
+              </dependency>
+            </suppliersInternal>
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="d2f66155-b890-4ab2-a752-7ab82613a07d"
+                LastKnownName="HTTP"
+                LastKnownLocation="PAModelingProject.uml" />
+            </type_NamedElement>
+          </requiredInterface>
+        </ownedAttributesInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="c81f6d57-6628-48f3-9733-489b04b8ad2e"
+        name="PA WebService"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <part
+            Id="32408fe3-fb75-4d16-b919-e8967369f571"
+            name="Feedback Web Service"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="Composite"
+            isComposite="true">
+            <targetNamedElementsInternal>
+              <connector
+                Id="ff3d7ac8-946b-4942-8c2b-fe16e1ccde30"
+                isLeaf="false"
+                isStatic="false">
+                <partMoniker
+                  Id="75c115da-2757-47db-a0e0-92ded4d56a34"
+                  LastKnownName="Feedback Center"
+                  LastKnownLocation="PAModelingProject.uml" />
+                <relationshipOwnedElementsInternal>
+                  <connectorHasConnectorEnds>
+                    <connectorEnd
+                      Id="e7445064-6e57-42d6-b6be-34d5197e6c85">
+                      <portWithPart>
+                        <requiredInterfaceMoniker
+                          Id="fab42ae7-5bf8-4a8c-b56a-81ca5fd5e99f"
+                          LastKnownName="Port2"
+                          LastKnownLocation="PAModelingProject.uml" />
+                      </portWithPart>
+                    </connectorEnd>
+                  </connectorHasConnectorEnds>
+                  <connectorHasConnectorEnds>
+                    <connectorEnd
+                      Id="6526ab6e-3858-4a27-b1ef-28266aafca85">
+                      <portWithPart>
+                        <providedInterfaceMoniker
+                          Id="768ea694-28eb-4f0e-b625-0674e7f2c97b"
+                          LastKnownName="Port1"
+                          LastKnownLocation="PAModelingProject.uml" />
+                      </portWithPart>
+                    </connectorEnd>
+                  </connectorHasConnectorEnds>
+                </relationshipOwnedElementsInternal>
+              </connector>
+            </targetNamedElementsInternal>
+            <type_NamedElement>
+              <componentMoniker
+                Id="02e06484-74e0-486d-92f4-31c60bbfd4b0"
+                LastKnownName="Component1"
+                LastKnownLocation="PAModelingProject.uml" />
+            </type_NamedElement>
+          </part>
+          <providedInterface
+            Id="b4dd5cb7-448d-4a4b-a5d1-bee994028dd3"
+            name="Port1"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <targetNamedElementsInternal>
+              <connector
+                Id="2b5d5492-87c8-47ff-b01a-3b30149e8a57"
+                isLeaf="false"
+                isStatic="false">
+                <partMoniker
+                  Id="32408fe3-fb75-4d16-b919-e8967369f571"
+                  LastKnownName="Feedback Web Service"
+                  LastKnownLocation="PAModelingProject.uml" />
+                <relationshipOwnedElementsInternal>
+                  <connectorHasConnectorEnds>
+                    <connectorEnd
+                      Id="6a38c094-4cd2-4adc-9e2c-feaacc8e9b83" />
+                  </connectorHasConnectorEnds>
+                  <connectorHasConnectorEnds>
+                    <connectorEnd
+                      Id="a40573e1-2947-4ba1-ab3b-a944ab795f55">
+                      <portWithPart>
+                        <providedInterfaceMoniker
+                          Id="4902e5fc-b435-4524-937c-efac3d87dbbd"
+                          LastKnownName="Port1"
+                          LastKnownLocation="PAModelingProject.uml" />
+                      </portWithPart>
+                    </connectorEnd>
+                  </connectorHasConnectorEnds>
+                </relationshipOwnedElementsInternal>
+              </connector>
+            </targetNamedElementsInternal>
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="249a5852-6ac1-4de7-a08e-2bea5bcfa51f"
+                LastKnownName="Feedback service"
+                LastKnownLocation="PAModelingProject.uml" />
+            </type_NamedElement>
+          </providedInterface>
+          <part
+            Id="75c115da-2757-47db-a0e0-92ded4d56a34"
+            name="Feedback Center"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="Composite"
+            isComposite="true">
+            <targetNamedElementsInternal>
+              <connector
+                Id="ee1e045c-8e3e-4434-9cf2-345978e59831"
+                isLeaf="false"
+                isStatic="false">
+                <partMoniker
+                  Id="a1d9604d-ec4a-4bcd-92ff-6840f98897a5"
+                  LastKnownName="User Center"
+                  LastKnownLocation="PAModelingProject.uml" />
+                <relationshipOwnedElementsInternal>
+                  <connectorHasConnectorEnds>
+                    <connectorEnd
+                      Id="f5457d8d-b6a1-49ab-81aa-cf0b6f191a27">
+                      <portWithPart>
+                        <requiredInterfaceMoniker
+                          Id="eb1bf758-682e-47b5-8f5b-837a4d1bd7c0"
+                          LastKnownName="Port3"
+                          LastKnownLocation="PAModelingProject.uml" />
+                      </portWithPart>
+                    </connectorEnd>
+                  </connectorHasConnectorEnds>
+                  <connectorHasConnectorEnds>
+                    <connectorEnd
+                      Id="9d3b7d4b-770e-4e31-b3cc-3fb94c1e2dd0">
+                      <portWithPart>
+                        <providedInterfaceMoniker
+                          Id="d5933b15-3057-4388-8bea-4f4045d04502"
+                          LastKnownName="Port1"
+                          LastKnownLocation="PAModelingProject.uml" />
+                      </portWithPart>
+                    </connectorEnd>
+                  </connectorHasConnectorEnds>
+                </relationshipOwnedElementsInternal>
+              </connector>
+            </targetNamedElementsInternal>
+            <type_NamedElement>
+              <componentMoniker
+                Id="d43d4680-c612-4a25-b794-561e84d6eed6"
+                LastKnownName="Component2"
+                LastKnownLocation="PAModelingProject.uml" />
+            </type_NamedElement>
+          </part>
+          <part
+            Id="a1d9604d-ec4a-4bcd-92ff-6840f98897a5"
+            name="User Center"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="Composite"
+            isComposite="true">
+            <type_NamedElement>
+              <componentMoniker
+                Id="3b7049b0-95cc-482d-a2cd-22ea45a37cf7"
+                LastKnownName="Component3"
+                LastKnownLocation="PAModelingProject.uml" />
+            </type_NamedElement>
+          </part>
+        </ownedAttributesInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="278c884b-65dd-4544-a496-07719cea41d1"
+        name="Interface1"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="02e06484-74e0-486d-92f4-31c60bbfd4b0"
+        name="Component1"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <providedInterface
+            Id="4902e5fc-b435-4524-937c-efac3d87dbbd"
+            name="Port1"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="cff6157d-2e1b-4111-afaf-dfe0311c6663"
+                LastKnownName="Feedback"
+                LastKnownLocation="PAModelingProject.uml" />
+            </type_NamedElement>
+          </providedInterface>
+          <requiredInterface
+            Id="fab42ae7-5bf8-4a8c-b56a-81ca5fd5e99f"
+            name="Port2"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="4714171d-f521-4b96-b004-3c36f1809f49"
+                LastKnownName="Add feedback"
+                LastKnownLocation="PAModelingProject.uml" />
+            </type_NamedElement>
+          </requiredInterface>
+        </ownedAttributesInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="cff6157d-2e1b-4111-afaf-dfe0311c6663"
+        name="Feedback"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="d2f66155-b890-4ab2-a752-7ab82613a07d"
+        name="HTTP"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="249a5852-6ac1-4de7-a08e-2bea5bcfa51f"
+        name="Feedback service"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="d43d4680-c612-4a25-b794-561e84d6eed6"
+        name="Component2"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <providedInterface
+            Id="768ea694-28eb-4f0e-b625-0674e7f2c97b"
+            name="Port1"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="3ec84f2f-27c8-4f3b-99c4-9ec00ac952d1"
+                LastKnownName="Add feedback"
+                LastKnownLocation="PAModelingProject.uml" />
+            </type_NamedElement>
+          </providedInterface>
+          <providedInterface
+            Id="17deed15-5506-4501-a484-4c1cf5f2ad28"
+            name="Port2"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="560e78f6-36e7-4239-b18b-4f1a9abe299b"
+                LastKnownName="GetFeedback for PA"
+                LastKnownLocation="PAModelingProject.uml" />
+            </type_NamedElement>
+          </providedInterface>
+          <requiredInterface
+            Id="eb1bf758-682e-47b5-8f5b-837a4d1bd7c0"
+            name="Port3"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="543f3c45-6584-4157-a921-b62c36939c8e"
+                LastKnownName="Check permission"
+                LastKnownLocation="PAModelingProject.uml" />
+            </type_NamedElement>
+          </requiredInterface>
+        </ownedAttributesInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="3ec84f2f-27c8-4f3b-99c4-9ec00ac952d1"
+        name="Add feedback"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="4714171d-f521-4b96-b004-3c36f1809f49"
+        name="Add feedback"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="560e78f6-36e7-4239-b18b-4f1a9abe299b"
+        name="GetFeedback for PA"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="824167d3-2290-4de9-a116-5993fa871e56"
+        name="Web Browser"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <requiredInterface
+            Id="00a55f88-746c-4259-a73f-0527ee876c9a"
+            name="Port1"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <suppliersInternal>
+              <dependency
+                Id="71ad6e05-3077-43a6-b91f-13158b8538bd">
+                <providedInterfaceMoniker
+                  Id="f9737ed2-0da2-42ca-b8b1-0088c8af9bf7"
+                  LastKnownName="Port1"
+                  LastKnownLocation="PAModelingProject.uml" />
+              </dependency>
+            </suppliersInternal>
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="d2f66155-b890-4ab2-a752-7ab82613a07d"
+                LastKnownName="HTTP"
+                LastKnownLocation="PAModelingProject.uml" />
+            </type_NamedElement>
+          </requiredInterface>
+        </ownedAttributesInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="74c6d5f1-a083-4a93-87cd-45d6e5da9ef5"
+        name="PA WebService"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <part
+            Id="9b1ed306-49f1-4cb8-9f4d-6a97f65f3ea2"
+            name="Assessment Web Service"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="Composite"
+            isComposite="true">
+            <targetNamedElementsInternal>
+              <connector
+                Id="79c26bf1-be54-492f-a14a-f6217e927306"
+                isLeaf="false"
+                isStatic="false">
+                <partMoniker
+                  Id="f15cb785-a174-40c0-bb44-7834bb31ec5d"
+                  LastKnownName="Assessment Center"
+                  LastKnownLocation="PAModelingProject.uml" />
+                <relationshipOwnedElementsInternal>
+                  <connectorHasConnectorEnds>
+                    <connectorEnd
+                      Id="698e2bb7-e402-47a1-ab58-040482790132">
+                      <portWithPart>
+                        <requiredInterfaceMoniker
+                          Id="4b9c0a1f-832d-4d40-93ae-62e33d26989e"
+                          LastKnownName="Port2"
+                          LastKnownLocation="PAModelingProject.uml" />
+                      </portWithPart>
+                    </connectorEnd>
+                  </connectorHasConnectorEnds>
+                  <connectorHasConnectorEnds>
+                    <connectorEnd
+                      Id="805aef99-4e94-405b-b58d-ea7ada06a638">
+                      <portWithPart>
+                        <providedInterfaceMoniker
+                          Id="fefd3a95-ab49-4780-abc7-05b47b93a474"
+                          LastKnownName="Port2"
+                          LastKnownLocation="PAModelingProject.uml" />
+                      </portWithPart>
+                    </connectorEnd>
+                  </connectorHasConnectorEnds>
+                </relationshipOwnedElementsInternal>
+              </connector>
+            </targetNamedElementsInternal>
+            <type_NamedElement>
+              <componentMoniker
+                Id="9b9b1a6c-2087-4a4d-8a8a-2f5b5172c7f5"
+                LastKnownName="Component4"
+                LastKnownLocation="PAModelingProject.uml" />
+            </type_NamedElement>
+          </part>
+          <part
+            Id="7426d43b-9129-4fe3-b741-80d61c16e9e0"
+            name="User Center"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="Composite"
+            isComposite="true">
+            <type_NamedElement>
+              <componentMoniker
+                Id="efe7a754-247d-4c89-8163-400ae6608dec"
+                LastKnownName="Component5"
+                LastKnownLocation="PAModelingProject.uml" />
+            </type_NamedElement>
+          </part>
+          <part
+            Id="f15cb785-a174-40c0-bb44-7834bb31ec5d"
+            name="Assessment Center"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="Composite"
+            isComposite="true">
+            <targetNamedElementsInternal>
+              <connector
+                Id="8ae1eb90-0836-45c5-a57e-b9cbc87b4f5e"
+                isLeaf="false"
+                isStatic="false">
+                <partMoniker
+                  Id="7426d43b-9129-4fe3-b741-80d61c16e9e0"
+                  LastKnownName="User Center"
+                  LastKnownLocation="PAModelingProject.uml" />
+                <relationshipOwnedElementsInternal>
+                  <connectorHasConnectorEnds>
+                    <connectorEnd
+                      Id="dc835a24-a3fe-4bad-9c19-6b0fc6427c06">
+                      <portWithPart>
+                        <requiredInterfaceMoniker
+                          Id="8b1348b4-8cee-4a65-9dfa-66837ce6ce48"
+                          LastKnownName="Port1"
+                          LastKnownLocation="PAModelingProject.uml" />
+                      </portWithPart>
+                    </connectorEnd>
+                  </connectorHasConnectorEnds>
+                  <connectorHasConnectorEnds>
+                    <connectorEnd
+                      Id="11572056-8a79-473a-8627-2821868586bf">
+                      <portWithPart>
+                        <providedInterfaceMoniker
+                          Id="8168b6df-af22-41a4-b8b9-e49108bbb4e7"
+                          LastKnownName="Port1"
+                          LastKnownLocation="PAModelingProject.uml" />
+                      </portWithPart>
+                    </connectorEnd>
+                  </connectorHasConnectorEnds>
+                </relationshipOwnedElementsInternal>
+              </connector>
+            </targetNamedElementsInternal>
+            <type_NamedElement>
+              <componentMoniker
+                Id="cdcddaad-6154-420e-978b-c655da86aa7d"
+                LastKnownName="Component6"
+                LastKnownLocation="PAModelingProject.uml" />
+            </type_NamedElement>
+          </part>
+          <providedInterface
+            Id="f9737ed2-0da2-42ca-b8b1-0088c8af9bf7"
+            name="Port1"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <targetNamedElementsInternal>
+              <connector
+                Id="922d0d82-3136-4ddc-bd1e-b8c0e657fcc6"
+                isLeaf="false"
+                isStatic="false">
+                <partMoniker
+                  Id="9b1ed306-49f1-4cb8-9f4d-6a97f65f3ea2"
+                  LastKnownName="Assessment Web Service"
+                  LastKnownLocation="PAModelingProject.uml" />
+                <relationshipOwnedElementsInternal>
+                  <connectorHasConnectorEnds>
+                    <connectorEnd
+                      Id="a167f122-145f-4ba2-8e1b-55cfc110ebcd" />
+                  </connectorHasConnectorEnds>
+                  <connectorHasConnectorEnds>
+                    <connectorEnd
+                      Id="8868a600-886c-4c1c-bab7-7eee7ba930cb">
+                      <portWithPart>
+                        <providedInterfaceMoniker
+                          Id="3eea1adf-79f1-4701-aeb5-1e5e1d9ec482"
+                          LastKnownName="Port1"
+                          LastKnownLocation="PAModelingProject.uml" />
+                      </portWithPart>
+                    </connectorEnd>
+                  </connectorHasConnectorEnds>
+                </relationshipOwnedElementsInternal>
+              </connector>
+            </targetNamedElementsInternal>
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="011d9bff-5a78-42cf-86a9-1c4d73e5e71d"
+                LastKnownName="Assessment Service"
+                LastKnownLocation="PAModelingProject.uml" />
+            </type_NamedElement>
+          </providedInterface>
+        </ownedAttributesInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="3b7049b0-95cc-482d-a2cd-22ea45a37cf7"
+        name="Component3"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <providedInterface
+            Id="d5933b15-3057-4388-8bea-4f4045d04502"
+            name="Port1"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="a52f974e-5f0c-4557-9df8-eeb4fc4223ab"
+                LastKnownName="permission"
+                LastKnownLocation="PAModelingProject.uml" />
+            </type_NamedElement>
+          </providedInterface>
+        </ownedAttributesInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="a52f974e-5f0c-4557-9df8-eeb4fc4223ab"
+        name="permission"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="a365b5cb-78e5-49c6-973c-8090129e8bc4"
+        name="Interface2"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="45d5cd5e-0aeb-4509-8b86-a56a4759ed32"
+        name="Interface3"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="543f3c45-6584-4157-a921-b62c36939c8e"
+        name="Check permission"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="9b9b1a6c-2087-4a4d-8a8a-2f5b5172c7f5"
+        name="Component4"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <providedInterface
+            Id="3eea1adf-79f1-4701-aeb5-1e5e1d9ec482"
+            name="Port1"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="f1a30cf8-3ee3-4ceb-96ca-87ea2c503d00"
+                LastKnownName="Assessment"
+                LastKnownLocation="PAModelingProject.uml" />
+            </type_NamedElement>
+          </providedInterface>
+          <requiredInterface
+            Id="4b9c0a1f-832d-4d40-93ae-62e33d26989e"
+            name="Port2"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="565a6333-4a65-4b48-9f8a-51c6938b92ba"
+                LastKnownName="Add assessment"
+                LastKnownLocation="PAModelingProject.uml" />
+            </type_NamedElement>
+          </requiredInterface>
+        </ownedAttributesInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="efe7a754-247d-4c89-8163-400ae6608dec"
+        name="Component5"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <providedInterface
+            Id="8168b6df-af22-41a4-b8b9-e49108bbb4e7"
+            name="Port1"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="610931af-13a0-4099-874d-e5cc0459b486"
+                LastKnownName="User Permission"
+                LastKnownLocation="PAModelingProject.uml" />
+            </type_NamedElement>
+          </providedInterface>
+        </ownedAttributesInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="cdcddaad-6154-420e-978b-c655da86aa7d"
+        name="Component6"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <requiredInterface
+            Id="8b1348b4-8cee-4a65-9dfa-66837ce6ce48"
+            name="Port1"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="912cdd50-16e5-4c1e-b720-5e8c88a5a911"
+                LastKnownName="Check permission"
+                LastKnownLocation="PAModelingProject.uml" />
+            </type_NamedElement>
+          </requiredInterface>
+          <providedInterface
+            Id="fefd3a95-ab49-4780-abc7-05b47b93a474"
+            name="Port2"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="f9b10826-9fcf-4e1f-8f61-b0a9c8cf825d"
+                LastKnownName="Add assessment"
+                LastKnownLocation="PAModelingProject.uml" />
+            </type_NamedElement>
+          </providedInterface>
+          <providedInterface
+            Id="db3bf997-6a1c-4067-9d66-5eb003a02a5c"
+            name="Port3"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="7bc24216-2a1d-48ca-b9b6-9c89179d22b7"
+                LastKnownName="Get assessment"
+                LastKnownLocation="PAModelingProject.uml" />
+            </type_NamedElement>
+          </providedInterface>
+        </ownedAttributesInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="f1a30cf8-3ee3-4ceb-96ca-87ea2c503d00"
+        name="Assessment"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="011d9bff-5a78-42cf-86a9-1c4d73e5e71d"
+        name="Assessment Service"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="610931af-13a0-4099-874d-e5cc0459b486"
+        name="User Permission"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="912cdd50-16e5-4c1e-b720-5e8c88a5a911"
+        name="Check permission"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="565a6333-4a65-4b48-9f8a-51c6938b92ba"
+        name="Add assessment"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="b876af14-4ee4-447d-abdb-01ffb0e01191"
+        name="Interface4"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="f9b10826-9fcf-4e1f-8f61-b0a9c8cf825d"
+        name="Add assessment"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="7bc24216-2a1d-48ca-b9b6-9c89179d22b7"
+        name="Get assessment"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="919f4a39-cc07-429c-a382-a17a44e5243e"
+        name="Web Browser"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <requiredInterface
+            Id="6145fde6-1c0f-4b84-9694-1d48e3e5a945"
+            name="Port1"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <suppliersInternal>
+              <dependency
+                Id="e68658dc-f0f3-4b2e-8d88-75dd290f630d">
+                <providedInterfaceMoniker
+                  Id="e36db26e-ecfd-4a3e-80ed-9ad3398bd611"
+                  LastKnownName="Port1"
+                  LastKnownLocation="PAModelingProject.uml" />
+              </dependency>
+            </suppliersInternal>
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="d2f66155-b890-4ab2-a752-7ab82613a07d"
+                LastKnownName="HTTP"
+                LastKnownLocation="PAModelingProject.uml" />
+            </type_NamedElement>
+          </requiredInterface>
+        </ownedAttributesInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="2c072da0-cac8-40b0-893f-e21bdf1c6ffc"
+        name="PA Web Service"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <providedInterface
+            Id="e36db26e-ecfd-4a3e-80ed-9ad3398bd611"
+            name="Port1"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <targetNamedElementsInternal>
+              <connector
+                Id="4de1b621-6eee-4ef8-8ff6-6d0ddc9edfb1"
+                isLeaf="false"
+                isStatic="false">
+                <partMoniker
+                  Id="53d7f142-8a46-4a7d-815b-8e1c0c22fc6e"
+                  LastKnownName="Rating Service"
+                  LastKnownLocation="PAModelingProject.uml" />
+                <relationshipOwnedElementsInternal>
+                  <connectorHasConnectorEnds>
+                    <connectorEnd
+                      Id="58292a37-1a20-40a7-b1bf-f61ec13d2390" />
+                  </connectorHasConnectorEnds>
+                  <connectorHasConnectorEnds>
+                    <connectorEnd
+                      Id="2d7d2c97-d5c9-4b2d-a77f-376cb86f3b61">
+                      <portWithPart>
+                        <providedInterfaceMoniker
+                          Id="ca4d409e-b129-42f2-93cb-53f3f56f8549"
+                          LastKnownName="Port2"
+                          LastKnownLocation="PAModelingProject.uml" />
+                      </portWithPart>
+                    </connectorEnd>
+                  </connectorHasConnectorEnds>
+                </relationshipOwnedElementsInternal>
+              </connector>
+            </targetNamedElementsInternal>
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="83d64eb6-90f7-4659-9096-f68400f45ad7"
+                LastKnownName="Rating Service"
+                LastKnownLocation="PAModelingProject.uml" />
+            </type_NamedElement>
+          </providedInterface>
+          <part
+            Id="53d7f142-8a46-4a7d-815b-8e1c0c22fc6e"
+            name="Rating Service"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="Composite"
+            isComposite="true">
+            <targetNamedElementsInternal>
+              <connector
+                Id="a5309a49-8a46-46f7-861a-a0e23d1b565f"
+                isLeaf="false"
+                isStatic="false">
+                <partMoniker
+                  Id="cee344fb-8cd2-4a2a-a821-5990205ebdd6"
+                  LastKnownName="Rating Center"
+                  LastKnownLocation="PAModelingProject.uml" />
+                <relationshipOwnedElementsInternal>
+                  <connectorHasConnectorEnds>
+                    <connectorEnd
+                      Id="29c6a643-7e86-440e-a265-92c5a0eadaff">
+                      <portWithPart>
+                        <requiredInterfaceMoniker
+                          Id="4c3323ad-6196-403b-9c65-58f3f572f557"
+                          LastKnownName="Port1"
+                          LastKnownLocation="PAModelingProject.uml" />
+                      </portWithPart>
+                    </connectorEnd>
+                  </connectorHasConnectorEnds>
+                  <connectorHasConnectorEnds>
+                    <connectorEnd
+                      Id="d5650277-5322-4161-b0b6-32bc7ba1748f">
+                      <portWithPart>
+                        <providedInterfaceMoniker
+                          Id="8897b947-0347-49f0-85f0-4a812087bab1"
+                          LastKnownName="Port4"
+                          LastKnownLocation="PAModelingProject.uml" />
+                      </portWithPart>
+                    </connectorEnd>
+                  </connectorHasConnectorEnds>
+                </relationshipOwnedElementsInternal>
+              </connector>
+            </targetNamedElementsInternal>
+            <type_NamedElement>
+              <componentMoniker
+                Id="940414f9-0001-4efd-9aad-fae094bcdfeb"
+                LastKnownName="Component7"
+                LastKnownLocation="PAModelingProject.uml" />
+            </type_NamedElement>
+          </part>
+          <part
+            Id="839a5674-9b50-4e55-bbd8-8bc2bc821cf0"
+            name="Assessment Center"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="Composite"
+            isComposite="true">
+            <type_NamedElement>
+              <componentMoniker
+                Id="5604b153-f15e-4d6f-9a39-20ac0fa40b8c"
+                LastKnownName="Component8"
+                LastKnownLocation="PAModelingProject.uml" />
+            </type_NamedElement>
+          </part>
+          <part
+            Id="cee344fb-8cd2-4a2a-a821-5990205ebdd6"
+            name="Rating Center"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="Composite"
+            isComposite="true">
+            <targetNamedElementsInternal>
+              <connector
+                Id="017d3fbb-fac1-4e76-8b01-525a5e97e032"
+                isLeaf="false"
+                isStatic="false">
+                <partMoniker
+                  Id="839a5674-9b50-4e55-bbd8-8bc2bc821cf0"
+                  LastKnownName="Assessment Center"
+                  LastKnownLocation="PAModelingProject.uml" />
+                <relationshipOwnedElementsInternal>
+                  <connectorHasConnectorEnds>
+                    <connectorEnd
+                      Id="4ca550ac-d520-46be-b4a4-57874b4271f5">
+                      <portWithPart>
+                        <requiredInterfaceMoniker
+                          Id="a2a8c1ff-5d5e-4906-a773-50d5c6b0eab2"
+                          LastKnownName="Port1"
+                          LastKnownLocation="PAModelingProject.uml" />
+                      </portWithPart>
+                    </connectorEnd>
+                  </connectorHasConnectorEnds>
+                  <connectorHasConnectorEnds>
+                    <connectorEnd
+                      Id="d3787554-ce3f-45c1-9a50-e4bb4a84d17a">
+                      <portWithPart>
+                        <providedInterfaceMoniker
+                          Id="6872bef4-b2df-4c5b-a91c-4def54039fab"
+                          LastKnownName="Port1"
+                          LastKnownLocation="PAModelingProject.uml" />
+                      </portWithPart>
+                    </connectorEnd>
+                  </connectorHasConnectorEnds>
+                </relationshipOwnedElementsInternal>
+              </connector>
+              <connector
+                Id="bacc6201-a22b-4b8b-b94d-76bd8a76bfde"
+                isLeaf="false"
+                isStatic="false">
+                <partMoniker
+                  Id="0e7e1b1c-6b3a-42e7-8cfa-acd60abff1ab"
+                  LastKnownName="Feedback Center"
+                  LastKnownLocation="PAModelingProject.uml" />
+                <relationshipOwnedElementsInternal>
+                  <connectorHasConnectorEnds>
+                    <connectorEnd
+                      Id="23bb11e4-0cb2-4a89-9a20-3260a61d3970">
+                      <portWithPart>
+                        <requiredInterfaceMoniker
+                          Id="70d38f10-61cc-4862-961c-4f1830c453ad"
+                          LastKnownName="Port2"
+                          LastKnownLocation="PAModelingProject.uml" />
+                      </portWithPart>
+                    </connectorEnd>
+                  </connectorHasConnectorEnds>
+                  <connectorHasConnectorEnds>
+                    <connectorEnd
+                      Id="3d8671d4-f097-44f0-923f-2dd28fa1645f">
+                      <portWithPart>
+                        <providedInterfaceMoniker
+                          Id="b7f474e6-f15f-4ef3-a214-9b74b9abef63"
+                          LastKnownName="Port1"
+                          LastKnownLocation="PAModelingProject.uml" />
+                      </portWithPart>
+                    </connectorEnd>
+                  </connectorHasConnectorEnds>
+                </relationshipOwnedElementsInternal>
+              </connector>
+              <connector
+                Id="0d8d3cc2-e749-4c1c-9046-1bcd8fb0907d"
+                isLeaf="false"
+                isStatic="false">
+                <partMoniker
+                  Id="76c2069d-717e-44fe-b5a8-171da6c8cf71"
+                  LastKnownName="User Center"
+                  LastKnownLocation="PAModelingProject.uml" />
+                <relationshipOwnedElementsInternal>
+                  <connectorHasConnectorEnds>
+                    <connectorEnd
+                      Id="42ce4780-aa58-4f2d-8ec3-b75446b6e635">
+                      <portWithPart>
+                        <requiredInterfaceMoniker
+                          Id="f9f3fe80-49c1-4e49-ae04-9292954b47b5"
+                          LastKnownName="Port3"
+                          LastKnownLocation="PAModelingProject.uml" />
+                      </portWithPart>
+                    </connectorEnd>
+                  </connectorHasConnectorEnds>
+                  <connectorHasConnectorEnds>
+                    <connectorEnd
+                      Id="30730893-046e-42f6-903c-84f0251ec745">
+                      <portWithPart>
+                        <providedInterfaceMoniker
+                          Id="1761ec20-d23a-4a48-9b40-ad01febce71d"
+                          LastKnownName="Port1"
+                          LastKnownLocation="PAModelingProject.uml" />
+                      </portWithPart>
+                    </connectorEnd>
+                  </connectorHasConnectorEnds>
+                </relationshipOwnedElementsInternal>
+              </connector>
+            </targetNamedElementsInternal>
+            <type_NamedElement>
+              <componentMoniker
+                Id="280d11ed-9272-40b2-8138-346b4b084302"
+                LastKnownName="Component9"
+                LastKnownLocation="PAModelingProject.uml" />
+            </type_NamedElement>
+          </part>
+          <part
+            Id="0e7e1b1c-6b3a-42e7-8cfa-acd60abff1ab"
+            name="Feedback Center"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="Composite"
+            isComposite="true">
+            <type_NamedElement>
+              <componentMoniker
+                Id="51f0bacc-3dc6-46f0-b3da-f547840c2e14"
+                LastKnownName="Component10"
+                LastKnownLocation="PAModelingProject.uml" />
+            </type_NamedElement>
+          </part>
+          <part
+            Id="76c2069d-717e-44fe-b5a8-171da6c8cf71"
+            name="User Center"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="Composite"
+            isComposite="true">
+            <type_NamedElement>
+              <componentMoniker
+                Id="2599b6b1-41a7-4b3f-8750-79ce386bae72"
+                LastKnownName="Component11"
+                LastKnownLocation="PAModelingProject.uml" />
+            </type_NamedElement>
+          </part>
+        </ownedAttributesInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="7e4ae416-4c99-43be-b179-fc37b5971176"
+        name="Rating"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="83d64eb6-90f7-4659-9096-f68400f45ad7"
+        name="Rating Service"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="940414f9-0001-4efd-9aad-fae094bcdfeb"
+        name="Component7"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <requiredInterface
+            Id="4c3323ad-6196-403b-9c65-58f3f572f557"
+            name="Port1"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="692f44ad-20ad-46d0-85d2-0ac2d65be74e"
+                LastKnownName="Do Rating"
+                LastKnownLocation="PAModelingProject.uml" />
+            </type_NamedElement>
+          </requiredInterface>
+          <providedInterface
+            Id="ca4d409e-b129-42f2-93cb-53f3f56f8549"
+            name="Port2"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="ed509cb2-91e7-4432-9ba5-3d614a8ce669"
+                LastKnownName="Rating"
+                LastKnownLocation="PAModelingProject.uml" />
+            </type_NamedElement>
+          </providedInterface>
+        </ownedAttributesInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="5604b153-f15e-4d6f-9a39-20ac0fa40b8c"
+        name="Component8"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <providedInterface
+            Id="6872bef4-b2df-4c5b-a91c-4def54039fab"
+            name="Port1"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="e46428ee-eb56-4b02-bba4-b4c38d267d13"
+                LastKnownName="Get assessment"
+                LastKnownLocation="PAModelingProject.uml" />
+            </type_NamedElement>
+          </providedInterface>
+        </ownedAttributesInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="280d11ed-9272-40b2-8138-346b4b084302"
+        name="Component9"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <requiredInterface
+            Id="a2a8c1ff-5d5e-4906-a773-50d5c6b0eab2"
+            name="Port1"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="f833b281-a420-4e6c-ac22-8ea77b1d4a97"
+                LastKnownName="Get assessment"
+                LastKnownLocation="PAModelingProject.uml" />
+            </type_NamedElement>
+          </requiredInterface>
+          <requiredInterface
+            Id="70d38f10-61cc-4862-961c-4f1830c453ad"
+            name="Port2"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="00233cd6-20a2-426b-96fb-12d8d23173bd"
+                LastKnownName="Get feeback"
+                LastKnownLocation="PAModelingProject.uml" />
+            </type_NamedElement>
+          </requiredInterface>
+          <requiredInterface
+            Id="f9f3fe80-49c1-4e49-ae04-9292954b47b5"
+            name="Port3"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="302a9838-4e4a-451f-beac-4dde2ff8968c"
+                LastKnownName="User permission"
+                LastKnownLocation="PAModelingProject.uml" />
+            </type_NamedElement>
+          </requiredInterface>
+          <providedInterface
+            Id="8897b947-0347-49f0-85f0-4a812087bab1"
+            name="Port4"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="4f5f0717-deb5-4b81-8f78-e8df22f499e8"
+                LastKnownName="Do Rating"
+                LastKnownLocation="PAModelingProject.uml" />
+            </type_NamedElement>
+          </providedInterface>
+        </ownedAttributesInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="51f0bacc-3dc6-46f0-b3da-f547840c2e14"
+        name="Component10"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <providedInterface
+            Id="b7f474e6-f15f-4ef3-a214-9b74b9abef63"
+            name="Port1"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="1f328be3-27ba-447f-b1af-a0e8d6aae68e"
+                LastKnownName="Get feedback"
+                LastKnownLocation="PAModelingProject.uml" />
+            </type_NamedElement>
+          </providedInterface>
+        </ownedAttributesInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="2599b6b1-41a7-4b3f-8750-79ce386bae72"
+        name="Component11"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <providedInterface
+            Id="1761ec20-d23a-4a48-9b40-ad01febce71d"
+            name="Port1"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="64301c7e-7620-40c2-9970-c7cb8c2811d4"
+                LastKnownName="User permission"
+                LastKnownLocation="PAModelingProject.uml" />
+            </type_NamedElement>
+          </providedInterface>
+        </ownedAttributesInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="1f328be3-27ba-447f-b1af-a0e8d6aae68e"
+        name="Get feedback"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="e46428ee-eb56-4b02-bba4-b4c38d267d13"
+        name="Get assessment"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="f833b281-a420-4e6c-ac22-8ea77b1d4a97"
+        name="Get assessment"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="00233cd6-20a2-426b-96fb-12d8d23173bd"
+        name="Get feeback"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="64301c7e-7620-40c2-9970-c7cb8c2811d4"
+        name="User permission"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="302a9838-4e4a-451f-beac-4dde2ff8968c"
+        name="User permission"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="4f5f0717-deb5-4b81-8f78-e8df22f499e8"
+        name="Do Rating"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="692f44ad-20ad-46d0-85d2-0ac2d65be74e"
+        name="Do Rating"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="ed509cb2-91e7-4432-9ba5-3d614a8ce669"
+        name="Rating"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>
